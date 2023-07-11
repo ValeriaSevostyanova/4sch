@@ -8,7 +8,7 @@ Window.borderless = 1
 
 class MyApp(App):
     def build(self):
-        i = Image(source='кот-чавкает.gif',
+        i = Image(source='chomping-cat.gif',
                   size_hint=(Window.width, Window.height),
                   pos_hint={'center_x': .5, 'center_y': .5})
         return i
