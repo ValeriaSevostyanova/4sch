@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-s = Service(executable_path='/home/valeria/selenium_vk/chromedriver')
+s = Service(executable_path='PATH/TO/driver') # <--------------------
 driver = webdriver.Chrome(service=s)
 
 driver.maximize_window()
@@ -14,7 +14,7 @@ time.sleep(5)
 
 email_input = driver.find_element(By.ID, 'index_email')
 email_input.clear()
-email_input.send_keys('89266252102')
+email_input.send_keys('PHONE_NUMBER_INPUT') # <--------------------
 email_input.send_keys(Keys.ENTER)
 time.sleep(25)
 
